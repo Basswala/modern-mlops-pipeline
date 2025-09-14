@@ -1,0 +1,27 @@
+# Core ML dependencies
+dvc>=3.0.0
+dagshub>=0.3.0
+scikit-learn>=1.3.0
+mlflow>=2.8.0
+dvc-s3>=2.25.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Model serving
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+
+# Development tools
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.0.0
+flake8>=6.0.0
+pre-commit>=3.5.0
+python-dotenv>=1.0.0
+
+# Data validation
+great-expectations>=0.18.0
+
+# Monitoring and observability
+evidently>=0.4.0
