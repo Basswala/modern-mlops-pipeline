@@ -49,7 +49,7 @@ def test_health_check():
 
 
 @patch('src.api.model')
-def test_predict_single(mock_model, sample_data_point, mock_model):
+def test_predict_single(mock_model, sample_data_point):
     """Test single prediction endpoint."""
     # Set up mock
     mock_model.predict.return_value = [1]
@@ -65,7 +65,7 @@ def test_predict_single(mock_model, sample_data_point, mock_model):
 
 
 @patch('src.api.model')
-def test_predict_batch(mock_model, sample_data_point, mock_model):
+def test_predict_batch(mock_model, sample_data_point):
     """Test batch prediction endpoint."""
     # Set up mock
     mock_model.predict.return_value = [1, 0]
